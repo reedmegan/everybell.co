@@ -180,14 +180,14 @@ select {
   /* for mobile safari */
   -webkit-appearance: none;
 }
-
+/* Remove Back to Top Button 
 #topcontrol {
-  background: #5d80a1;
+  background: yellow;
   color: #fff;
   text-align: center;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border: none;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -202,6 +202,7 @@ select {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   z-index: 30;
+    margin: 70px;
 }
 
 #topcontrol:hover {
@@ -212,7 +213,7 @@ select {
   position: relative;
   top: 3px;
   font-size: 25px;
-}
+}  */
 
 .video-container iframe {
   max-width: 100%;
@@ -244,7 +245,7 @@ select {
 }
 
 .header.scrolled .logo {
-    background-image: url(../images/everybell-min-logo.png);
+    background-image: url(../images/hotelify-min-logo.png);
     background-repeat: no-repeat;
     height: 50px;
     top: 15px;
@@ -254,7 +255,7 @@ select {
   display: inline-block;
   width: 200px;
   position: relative;
-  background-image: url(../images/everybell-min-logo.png); 
+  background-image: url(../images/hotelify-min-logo.png); 
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -483,7 +484,7 @@ select {
 }
 
 .bg-slider-wrapper .flexslider .slide.slide-1 {
-  background: #253340 url('../images/background/everybell-home-bg-service.jpg') no-repeat 50% top;
+  background: #253340 url('../images/background/hotelify-home-bg-service.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -539,11 +540,11 @@ select {
 }
 
 .headline-bg.contact-headline-bg {
-  background-image: url('../images/background/everybell-about-bg-hotel-room.jpg');
+  background-image: url('../images/background/hotelify-about-bg-hotel-room.jpg');
 }
 
 .headline-bg.about-headline-bg {
-  background-image: url('../images/background/everybell-about-bg-hotel-room.jpg');
+  background-image: url('../images/background/hotelify-about-bg-hotel-room.jpg');
 }
 
 /* ======= Promo ======= */
@@ -554,7 +555,7 @@ select {
   margin-bottom: 80px;
   min-height: 550px;
   z-index: 10;
-  background-image: url(../images/background/everybell-home-bg-service.jpg);
+  background-image: url(../images/background/hotelify-home-bg-service.jpg);
   background-size: cover;
 }
 
@@ -892,7 +893,7 @@ select {
 
 /* ======= cta-section ======= */
 .cta-section.home-1 {
-  background: url('../images/steps/everybell-intro-services-concierge.png');
+  background: url('../images/steps/hotelify-intro-services-concierge.png');
   background-size: 500px;
   background-repeat: no-repeat;
   color: #fff;
@@ -1161,9 +1162,10 @@ select {
 }
 
 .stripe.straight img {
+  position: relative;
   margin-top: 50px;
   margin-left: 130px;
-  z-index: 15;
+  z-index: -1;
 }
 
 .steps .title {
@@ -1560,7 +1562,7 @@ select {
   padding-top: 90px;
   position: relative;
   z-index: 10;
-  background: white url(../images/background/everybell-about-bg-hotel-room.jpg);
+  background: white url(../images/background/hotelify-about-bg-hotel-room.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 100%;
@@ -1943,16 +1945,20 @@ select {
 }
 /* ======= Login Page ======= */
 .has-full-screen-bg .upper-wrapper {
-  background: url('../images/background/everybell-login-bg-hotel-checkin.jpg');
+  background: url('../images/background/hotelify-login-bg-hotel-checkin.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    height: 700px;
   background-repeat: no-repeat;
 }
 
+.has-full-screen-bg .upper-wrapper .logo {
+}
+
 .has-full-screen-bg.signup-page .upper-wrapper {
-  background: url('../images/background/everybell-signup-bg-hotel-room.jpg') no-repeat 50% top;
+  background: url('../images/background/hotelify-signup-bg-hotel-room.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2197,181 +2203,24 @@ select {
   margin-bottom: 30px;
 }
 /* ======= Footer ======= */
-.footer {
-  background: #06A6E3; 
-  position: relative;
-  z-index: 20;
-}
-
-.footer p {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: .8;
-  margin-bottom: 0px;
-}
-
-.footer .btn-cta,
-.footer a.btn-cta {
-  padding: 8px 15px;
-}
-
-.footer .footer-col.links .fa {
-  margin-right: 5px;
-}
-
-.footer .footer-col.links li {
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;  
-  padding-top: 25px;
-}
-
-.footer-logo {
-    margin-top: -15px;
-}
-
-.footer .footer-col .social {
-  margin-bottom: 15px;
-  position: relative;
-  text-align: center;
-  margin-top: 0px;
-}
-
-.social li a {
-  margin-right: 0px;
-  font-size: 21px;  
-}
-
-.footer .footer-col.connect .social li a .fa {
+.bottom-bar {
+  background: #06A6E3;
   color: #fff;
-}
-
-.footer .footer-col.connect .social li a .fa:hover {
-  color: #0FF7D6;
-}
-.footer .footer-col.connect .btn-cta-primary {
-  background: #2C2E3E;
-  border-color: #2C2E3E;
-}
-
-.footer .footer-col.connect .btn-cta-primary:hover {
-  background: #4a6781;
-  border-color: #4a6781;
-}
-
-.footer .footer-col .title {
-  color: #fff;
-  font-weight: normal;
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 0px;
-  -webkit-opacity: 0.9;
-  -moz-opacity: 0.9;
-  opacity: 0.9;
-}
-
-.footer .footer-col p {
-  color: #fff;
-}
-
-.footer .footer-col a {
-  color: #fff;
-  padding: 0px;
-}
-
-.footer .footer-col a:hover {
-  color: #0FF7D6;
-  opacity: 1;
-}
-
-.footer .footer-col .signup-form {
-  padding-left: 0;
-  padding-right: 0;
-  float: right;
-}
-
-.footer .footer-col .signup-form .form-control {
-  -webkit-opacity: 0.9;
-  -moz-opacity: 0.9;
-  opacity: 0.9;
-  font-size: 14px;
-  position: relative;
-  top: 2px;
-}
-
-.footer .footer-col .signup-form .form-control:focus {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-}
-
-.footer .footer-col .signup-form .form-group {
-  display: inline-block;
-}
-
-.footer .footer-col .signup-form .btn {
-  font-size: 14px;
-}
-
-.footer .has-divider {
-  border-top: 1px solid #2b3b4a;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.footer .download .download-list li {
-  margin-bottom: 15px;
-}
-
-.footer .download .download-list li .btn-ghost {
+  font-size: 16px;
   text-align: left;
-  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;
-  width: 230px;
-  font-size: 14px;
+  height: 80px;
+    position: bottom;
+    
 }
 
-.footer .download .download-list li .btn-ghost:hover {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
+.bottom-bar .footer-logo {
+    padding: 30px;
 }
 
-.footer .contact p {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-}
-
-.footer .contact p a {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-}
-
-.footer .contact .fa {
-  margin-right: 10px;
-  font-size: 20px;
-}
-
-.footer .contact .email .fa {
-  font-size: 16px;
-}
-
-.footer .bottom-bar {
-  background: #047caa;
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 0px;
-  height: 30px;
-  margin-bottom: 0px;
-}
-
-.footer .bottom-bar p {
-  padding-top: 3px;
-  padding-bottom: 0px;
+.bottom-bar p {
+  margin-left:100px;
+    margin-top: 28px;
+  display: inline-block;
 }
 
 .credit {
@@ -2593,7 +2442,8 @@ select {
     
   .main-nav .navbar-collapse .navbar-nav {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    padding-left: 15px;
   }
     
   .blog-page .main-nav .navbar-collapse .navbar-nav {
@@ -2616,7 +2466,7 @@ select {
     float: none;
     margin: inherit;
     text-align: center;
-    background-image: url(../images/everybell-min-logo.png);
+    background-image: url(../images/hotelify-min-logo.png);
     height: 50px;
     top: 15px;
     left: 10px;
@@ -2644,11 +2494,11 @@ select {
   }
     
   .has-full-screen-bg.login-page.access-page .upper-wrapper {
-    background: url(../images/background/everybell-login-bg-hotel-checkin.jpg);
+    background: url(../images/background/hotelify-login-bg-hotel-checkin.jpg);
   }
     
   .has-full-screen-bg.signup-page.access-page .upper-wrapper {
-    background: url(../images/background/everybell-signup-bg-hotel-room.jpg);
+    background: url(../images/background/hotelify-signup-bg-hotel-room.jpg);
   }   
     
   .upper-wrapper img {
@@ -2850,31 +2700,10 @@ select {
   .searchbox-submit:hover {
     color: #fff;
   }
-    
-  .footer {
-    height: 360px;
-  }    
-    
-  .footer-col {
-    margin-bottom: 0px;
-  }
   
-  .footer .bottom-bar {
-    height: 60px;
-    margin-top: 0px;
-    padding-top: 5px;
+.bottom-bar {
+    display: none;
   }    
-    
-  .footer .footer-col .signup-form {
-    border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-    
-  .footer .footer-col .signup-form .form-control {
-    display: inline-block;
-  }
     
   .modal.modal-video .modal-dialog {
     width: auto;
@@ -2968,7 +2797,7 @@ select {
   .header .logo {
     float: left;
     text-align: center;
-    background-image: url(../images/everybell-min-logo.png);
+    background-image: url(../images/hotelify-min-logo.png);
     height: 50px;
     top: 15px;
     left: 10px;
@@ -3049,16 +2878,8 @@ select {
   .apps-section .phone-holder .screenshot {
     width: 242px;
     top: 66px;
-  }
+  }  
 
-  .footer {
-    height: 100px;
-  }    
-
-  .footer .bottom-bar {
-    margin-top: 0px;
-  }
-    
   .modal.modal-video .modal-dialog {
     width: auto;
     padding-left: 15px;
@@ -3087,10 +2908,6 @@ select {
     
   .contact-section {
     padding-top: 45px;
-  }
-    
-  .footer .signup-form .form-control {
-    width: 200px;
   }
     
 @media (min-width: 992px) {
@@ -3130,16 +2947,17 @@ select {
   }  
     
   .header.scrolled .logo {
-    background-image: url(../images/everybell-min-logo.png);
+    background-image: url(../images/hotelify-min-logo.png);
     height: 50px;
     top: 15px;
     left: 10px;
   }
     
 .header .logo {
-    background-image: url(../images/everybell-logo-type.png);
-    height: 50px;
-    top: 25px;
+    background-image: url(../images/hotelify-logo-type.png);
+    background-size: contain;
+    height: 30px;
+    top: 35px;
     left: 18px;
   }
     
@@ -3166,10 +2984,6 @@ select {
     
   .main-nav {
    float: right !important;
-  }
-    
-  .footer .signup-form .form-control {
-    width: 280px;
   }
     
   .header .logo {
@@ -3345,10 +3159,6 @@ select {
   }
   .features-tabbed .tabs-container {
     max-width: 800px;
-  }  
-    
-  .footer .footer-col .social {
-    left: 50px;
   }  
 }
     
